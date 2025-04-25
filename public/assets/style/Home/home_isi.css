@@ -1,0 +1,300 @@
+
+/* Font League Spartan */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+/* Font Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --bg-element: #000957;
+}
+
+body{
+    background-color: #fdffe2;
+}
+
+/* Overlay Hero(Tampilan Awal) */
+.jumbotron{
+    background: url(../../media/Ruangan\ pk.jpeg);
+    background-size: cover;
+    height: 500px;
+}
+
+.overlay-first{
+    background: url(../../media/Ruangan\ pk.jpeg);
+    
+
+}
+    /* Overlay div serta Teks yang di tengah */
+    .overlaybg{
+        background-image: linear-gradient(to bottom, rgba(0, 9, 87, 0.5), rgba(0,0,0,0) );
+    }
+
+/* Sambutan Kepsek */
+.Sambutan{
+
+    /* bagian section sambutan kepsek yang jadi  */
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    align-items: center;
+    padding: 70px 0 30px 70px;
+
+    /* Gambar Kepsek */
+    img{
+        border-radius: 50%;
+        margin-right: 25px;
+        width: 140px;
+        height: 140px;
+    }
+    
+    /* Div yang mengatur content sisanya */
+    .sambutan-kpsk{
+
+        margin-left: 25px;
+        width: 50%;
+        font-family: sans-serif;
+    
+        p{
+            padding: 10px 0 10px 0;
+            font-weight: lighter;
+            font-size: 14px;
+        }
+        
+        button{
+            background-color: #27388f;
+            color: white;
+            width: 100px;
+            padding: 5px;
+            border-radius: 30px;
+            border: none;
+            transition: 0.2s;
+        }
+        
+        button:hover{
+            color: #ffeb00;
+            transition: 0.2s;
+        }
+
+    }
+
+}
+
+/* Style Berita */
+.overlay-news h1{
+    text-align: center;
+    margin: 40px;
+    color: #27388f;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'League Spartan';
+}
+
+.berita{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item-news{
+    width: 290px;
+    height: 350px;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid black;
+    margin-bottom: 70px;
+    
+}
+.item-news img{
+    width: 100%;
+    height: 190px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.item-news h5{
+    width: 100%;
+    font-size: 14px;
+    padding-bottom: 40%;
+    height: 70px;
+    margin-top: 3px;
+    margin-bottom: 2px;
+    
+}
+
+.btn-brt{
+    background-color: #27388f;
+    color: white;
+    width: 50%;
+    padding: 5px;
+    border-radius: 30px;
+    border: none;
+    transition: 0.2s;
+    
+}
+
+.btn-brt:hover{
+    color: #ffeb00;
+    transition: 0.2s;
+}
+
+/* Style Jurusan */
+.jurusan-trsd{
+    background-color: var(--bg-element);
+    color: white;
+}
+
+.jurusan-trsd h1{
+    padding: 10px 0 40px 0;
+    font-size: 40px;
+    font-family: "Poppins";
+    text-align: center;
+}
+
+.jurusan-trsd article{
+    overflow: auto;
+    white-space: nowrap;
+    display: flex;
+    height: 450px;
+}
+
+/* Tolong saya button-nya nggak mau rata :( */
+.jurusan-trsd div{
+    
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    height: 400px;
+    margin: 10px 20px 10px 20px;
+    text-wrap: wrap;
+    text-align: center;
+    border: 1px solid white;    
+}
+
+.jurusan-trsd img{
+width: fit-content;
+    height: fit-content;
+}
+
+.jurusan-trsd > article > div > h1{
+    font-family: "Poppins";
+    font-size: 15px;
+    height:15%;
+    width: 100%;
+    padding: 10px 0;
+
+}
+.jurusan-trsd p{
+    justify-self: center;
+    align-self: center;
+    padding: 2px 0;
+    font-size: 14px;
+    flex-grow: 1;
+}
+.jurusan-trsd button{
+   background-color: white;
+    color: #27388f;
+    width: 50%;
+    padding: 5px;
+    border-radius: 30px;
+    border: none;
+    transition: 0.2s;
+    font-weight: bold;
+    
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.jurusan-trsd button:hover{
+    color: #ffeb00;
+    transition: 0.2s;
+
+}
+/* Style live count */
+.live-count{
+    width: 100%;
+    background-image: url(../../media/Background/Jaapnesr-clas.jpg);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.live-count div{
+    padding: 40px 25px 40px 25px;
+    margin: 25px;
+
+    border: 1px solid #f0f0f0;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+
+    width: 230px;
+    height: 150px;
+}
+
+.live-count p{
+    text-align: center;
+    font-size: 18px;
+    font-family: sans-serif;
+    
+    margin-top: 75px;
+}
+
+
+/* Breakpoints Mobile */
+@media only screen and (max-width: 600px) {
+
+    html,body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .overlay-first{
+        height: 40vh;
+        width: 100%;
+    }
+
+    /* Sambutan Kepsek */
+    .Sambutan{
+        grid-template-columns: 1fr;
+        grid-template-rows: 180px 1fr;
+        padding: 0;
+        justify-self: center;
+        margin: auto;
+    }
+
+    .sambutan-kpsk{
+        margin: auto;
+        width: 100%;
+        font-family: sans-serif;
+    
+        p{
+            padding: 10px 0 10px 0;
+            font-weight: lighter;
+            font-size: 14px;
+        }
+        
+        button{
+            background-color: #27388f;
+            color: white;
+            width: 100px;
+            padding: 5px;
+            border-radius: 30px;
+            border: none;
+            transition: 0.2s;
+        }
+        
+        button:hover{
+            color: #ffeb00;
+            transition: 0.2s;
+        }
+    }
+
+    .live-count{
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,60 @@
+footer{
+    display: grid;
+    grid-template-columns: 120px 300px 1fr ;
+    grid-template-rows: 170px 40px 60px 60px;
+    background-color: #1d1792;
+    color: white;
+    
+        
+}
+
+.logo-text{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin: 20px 20px;
+    margin-right: 0;
+    padding-bottom: 30px;
+}
+.smk-footer{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin: 20px 20px;
+    justify-self: center;
+    align-self: center;
+    font-family: 'Poppins';
+    margin-left: 0;
+    font-weight: bold;
+}
+.kontak{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    margin-left: 20px;
+}
+.about-ft{
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-left: 20px;
+}
+.icon-ft{
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 10px;
+}
+.icon-ft a{
+    margin: 5px;
+    font-size: 30px;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    color: white;
+}

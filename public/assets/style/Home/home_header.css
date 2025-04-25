@@ -1,0 +1,237 @@
+:root {
+    --blue: #1d1792;
+    --yellow: #f6e351;
+    --gray: #a2b29f;
+    --white: #ffff;
+    --black: #0000;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Deklarasi Header agar tidak overlapping dengan konten dibawahnya */
+  header, nav{
+    height: 60px;
+  }
+
+
+  /* navbar-logo */
+  
+  .logo {
+    display: flex;
+    margin-right: 340px;
+  }
+
+  .logo img {
+    height: 57px;
+    margin-top: 3px;
+    margin-right: 5px;
+  }
+  
+  .logo h1 {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+    color: #ffff;
+  }
+  
+  /* navbar-list */
+  .navbar_list {
+    overflow: hidden;
+    background-color: var(--blue);
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+
+    z-index: 99999;
+  }
+    
+  .navbar_list a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* navbar-dropdown */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+    
+  
+
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+    
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--white);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+    
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+    
+  .dropdown-content a:hover {
+    background-color: rgba(0, 0, 0, 0.39);
+    transition: 0.2s;
+  }
+  
+  .dropdown-content a::after {
+    content: '';
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    transform: scale(1);
+  }
+    
+  .dropdown:hover .dropdown-content {
+    display: block;
+    position: fixed;
+    transition: 0.2s;
+  }
+
+  .hamburger{
+    display: none;
+    cursor: pointer;
+    height: fit-content;
+    align-self: center;
+    justify-content: center;
+  }
+
+  .bar{
+    display: flex;
+    background-color: white;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+  }
+  
+@media only screen and (max-width: 768px) {
+    .hamburger{
+      display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navbar_list a{
+      float: none;
+    }
+
+    .dropdown{
+      width: 100%;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .dropList{
+      position: fixed;
+      left: -100%;
+      top: 60px;
+      gap: 0;
+      flex-direction: column;
+      background-color: #1d1792;
+      width: 100%;
+      height: 1000px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .dropList.active{
+      left: 0;
+      background-color: rgba(0,0,0,0.7);
+      height: 100vh;
+      float: none;
+      align-self:  center;
+    }
+
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+      
+    .dropdown .dropbtn {
+      font-size: 16px;  
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+      
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      left: 100;
+      background-color: var(--white);
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+      
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+      
+    .dropdown-content a:hover {
+      background-color: rgba(0, 0, 0, 0.39);
+      transition: 0.2s;
+    }
+    
+    .dropdown-content a::after {
+      content: '';
+      width: 100px;
+      height: 100px;
+      background-color: yellow;
+      transform: scale(1);
+    }
+      
+    .dropdown:hover .dropdown-content {
+      display: flex;
+      position: fixed;
+      transition: 0.2s;
+    }
+}

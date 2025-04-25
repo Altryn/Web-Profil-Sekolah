@@ -1,0 +1,41 @@
+main{
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #fdffe2;
+}
+
+.visi-misi{
+    padding: 10px;
+    font-size: 30px;
+}
+
+.visi{
+    padding: 10px;
+}
+.visi-cont{
+    margin: 10px auto;
+    width: 50%;
+}
+
+.visi-cont > h2, .misi h2{
+    font-size: 35px;
+    margin: 5px auto;
+}
+
+.visi-cont > p, .misi-desc >ol > li > p{
+    font-size: 23px;
+}
+
+.misi{
+    padding: 10px;
+}
+
+.misi-desc{
+    width: 50%;
+    text-align: left;
+    justify-self: center;
+}
+
+.misi-desc > ol > li{
+    margin: 10px auto;
+}

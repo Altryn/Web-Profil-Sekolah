@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://127.0.0.1:3000/Galeri/video.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./STM _ Videos_files/___vscode_livepreview_injected_script"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STM | Videos</title>
+
+    <link rel="stylesheet" href="./STM _ Videos_files/video.css">
+
+    <link rel="stylesheet" href="./STM _ Videos_files/home_header.css">
+    <link rel="stylesheet" href="./STM _ Videos_files/home_footer.css">
+</head>
+<body>
+    
+    <section class="judul">
+        <h3>Video Sekolah</h3>
+    </section>
+
+    <main>
+
+        <section class="main-vid">
+            <article class="video">
+                <video src="/assets/media/VID-20250303-WA0002.mp4" controls="" muted="" autoplay=""></video>
+                <h3 class="judul-vid">Judul Disini</h3>
+            </article>
+        </section>
+
+        <section class="vid-list">
+            <article class="vids">
+                <video src="/assets/media/VID-20250303-WA0002.mp4"></video>
+                <h3 class="judul-vid">Judul</h3>
+            </article>
+            <article class="vids">
+                <video src="/assets/media/VID-20250303-WA0002.mp4"></video>
+                <h3 class="judul-vid">Judul</h3>
+            </article>
+            <article class="vids">
+                <video src="/assets/media/VID-20250303-WA0002.mp4"></video>
+                <h3 class="judul-vid">Judul</h3>
+            </article>
+            <article class="vids">
+                <video src="/assets/media/VID-20250303-WA0002.mp4"></video>
+                <h3 class="judul-vid">Judul</h3>
+            </article>
+            <article class="vids">
+                <video src="/assets/media/VID-20250303-WA0002.mp4"></video>
+                <h3 class="judul-vid">Judul</h3>
+            </article>
+            <article class="vids">
+                <video src="/assets/media/VID-20250303-WA0002.mp4"></video>
+                <h3 class="judul-vid">Judul</h3>
+            </article>
+            <article class="vids">
+                <video src="/assets/media/VID-20250303-WA0002.mp4"></video>
+                <h3 class="judul-vid">Judul</h3>
+            </article>
+            <article class="vids">
+                <video src="/assets/media/VID-20250303-WA0002.mp4"></video>
+                <h3 class="judul-vid">Judul</h3>
+            </article>
+
+            <article class="vids">
+                <video src="/assets/media/mylivewallpapers.com-Fire-Force.mp4"></video>
+                <h3 class="judul-vid">Jududlll</h3>
+            </article>
+        </section>
+
+    </main>
+
+    <script>
+        let listVid = document.querySelector('.vid-list .vids');
+        let mainVid = document.querySelector('.main-vid video');
+        let judul = document.querySelector('.main-vid .judul');
+
+        listVid.forEach( video =>{
+            video.onclick = () =>{
+                listVid.forEach(vids => vid.classList.remove('active'));
+                video.classList.add('active');
+            };
+        });
+    </script>
+
+</body></html>

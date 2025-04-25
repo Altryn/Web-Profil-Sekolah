@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --bgbody: #fdffe2;
+    --mainclr: #1d1792;
+}
+
+body{
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: var(--bgbody);
+}
+
+main{
+    font-family: 'Poppins';
+    margin: 100px;
+}
+
+main img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.judul{
+    display: flex;
+    justify-self: center;
+    margin: 20px 0;
+    padding: 10px 0;
+    padding-left: 20px;
+    border-left: 4px solid #ffeb00;
+}
+
+.judul h3{
+    font-size: 2.5rem;
+    color: var(--mainclr);
+}
+
+
+.galeri{
+    columns: 320px;
+    gap: 5px;
+}
+
+.galeri img{
+    margin-bottom: 10px;
+}

@@ -1,0 +1,29 @@
+main{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.list-guru{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}   
+
+.list-guru > article{
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 11px;
+    background-color: whitesmoke;
+    width: 85%;
+}
+
+.list-guru > article > *{
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    width: fit-content;
+}
